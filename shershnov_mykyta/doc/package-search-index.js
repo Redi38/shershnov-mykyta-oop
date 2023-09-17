@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"shershnov_mykyta","l":"ua.khpi.oop.shershnov01.Task1"}];updateSearchResults();

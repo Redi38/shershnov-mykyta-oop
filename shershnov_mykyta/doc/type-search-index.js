@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ua.khpi.oop.shershnov01.Task1","l":"Main"}];updateSearchResults();
