@@ -1,12 +1,14 @@
-package ua.khpi.oop.shershnov07.Task14;
+package ua.khpi.oop.shershnov08.Task;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
  * Клас, що представляє планувальник з подіями.
  */
 public class Planner {
+
     private List<Event> events; // Список подій
 
     /**
@@ -35,20 +37,16 @@ public class Planner {
     }
 
     /**
-     * Редагує подію в планувальнику.
-     *
-     * @param event Подія, яку редагуємо.
-     * @param newDescription Новий опис події.
-     * @param newDate Нова дата події.
-     * @param newLocation Нове місце проведення події.
-     */
-
-    /**
      * Виводить всі події із планувальника.
      */
     public void displayEvents() {
-        for (Event event : events) {
-            System.out.println(event.toString());
+        if (events.isEmpty()) {
+            System.out.println("Планувальник порожній.");
+        } else {
+            System.out.println("Список всіх подій у планувальнику:");
+            for (Event event : events) {
+                System.out.println(event);
+            }
         }
     }
 
@@ -61,5 +59,14 @@ public class Planner {
         Event[] eventArray = new Event[events.size()];
         events.toArray(eventArray);
         return eventArray;
+    }
+
+    /**
+     * Встановлює список подій планувальника.
+     *
+     * @param events Масив подій.
+     */
+    public void setEvents(Event[] events) {
+        this.events = Arrays.asList(events);
     }
 }
