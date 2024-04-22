@@ -115,7 +115,7 @@ public class Main {
         }
     }
 
-    private static boolean isValidDateFormat(String dateStr) {
+    public static boolean isValidDateFormat(String dateStr) {
         String regex = "\\d{2}/\\d{2}/\\d{4} \\d{2}:\\d{2}";
         return dateStr.matches(regex);
     }

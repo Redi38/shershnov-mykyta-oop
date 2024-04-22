@@ -157,7 +157,7 @@ public class Main {
      * 
      * @param planner Планувальник подій.
      */
-    private static void searchConferences(Planner planner) {
+    public static void searchConferences(Planner planner) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         Date currentDate = new Date();

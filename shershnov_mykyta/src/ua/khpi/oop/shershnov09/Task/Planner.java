@@ -31,15 +31,6 @@ public class Planner implements Iterable<Event>, Serializable {
     }
 
     /**
-     * Видаляє подію з планувальника.
-     *
-     * @param event Подія, яку видаляємо з планувальника.
-     */
-    public void removeEvent(Event event) {
-        events.remove(event);
-    }
-
-    /**
      * Виводить всі події із планувальника.
      */
     public void displayEvents() {

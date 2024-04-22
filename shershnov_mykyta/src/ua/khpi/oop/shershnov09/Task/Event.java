@@ -40,38 +40,6 @@ public class Event implements Serializable {
         setDateFormat(new SimpleDateFormat("dd/MM/yyyy HH:mm"));
     }
 
-    /**
-     * Додає учасника до списку учасників події.
-     *
-     * @param participant Ім'я учасника.
-     */
-    public void addParticipant(String participant) {
-        participants.add(participant);
-    }
-
-    /**
-     * Видаляє учасника із списку учасників події.
-     *
-     * @param participant Ім'я учасника.
-     */
-    public void removeParticipant(String participant) {
-        participants.remove(participant);
-    }
-
-    /**
-     * Повертає список учасників події.
-     *
-     * @return Список учасників події.
-     */
-    public List<String> getParticipants() {
-        return participants;
-    }
-
-    /**
-     * Повертає дату події.
-     *
-     * @return Дата події.
-     */
     public Date getDate() {
         return date;
     }

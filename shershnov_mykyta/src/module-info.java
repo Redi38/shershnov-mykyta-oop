@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module shershnov_mykyta {
-}

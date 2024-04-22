@@ -11,6 +11,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+
+import ua.khpi.oop.shershnov14.Task.DataPersistence;
+import ua.khpi.oop.shershnov14.Task.Event;
+import ua.khpi.oop.shershnov14.Task.Planner;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.io.File;
@@ -113,7 +118,7 @@ public class Main {
      * @param scanner Об'єкт Scanner для зчитування введених даних.
      * @param planner Планувальник подій.
      */
-    private static void addEvent(Scanner scanner, Planner planner) {
+    public static void addEvent(Scanner scanner, Planner planner) {
         System.out.println("Введіть опис події:");
         String description = scanner.nextLine();
         System.out.println("Введіть дату події (у форматі dd/MM/yyyy HH:mm):");
@@ -152,7 +157,7 @@ public class Main {
      * @param dateStr Рядок, що представляє дату.
      * @return true, якщо формат дати коректний, false - в іншому випадку.
      */
-    private static boolean isValidDateFormat(String dateStr) {
+    public static boolean isValidDateFormat(String dateStr) {
         String regex = "\\d{2}/\\d{2}/\\d{4} \\d{2}:\\d{2}";
         return dateStr.matches(regex);
     }
@@ -171,7 +176,7 @@ public class Main {
      * 
      * @param planner Планувальник подій.
      */
-    private static void searchConferences(Planner planner) {
+    public static void searchConferences(Planner planner) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         Date currentDate = new Date();
